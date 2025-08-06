@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 – Lost in the Museum</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; background: linear-gradient(135deg, #f6f6f9 60%, #ffeaea 100%); }
+    .lost-art { max-width: 420px; margin-bottom: 2rem; }
+    .lost-art svg { width: 100%; height: auto; display: block; }
+    .lost-msg { text-align: center; font-size: 2.2rem; color: var(--primary); margin-bottom: 1.2rem; }
+    .lost-desc { color: #888; font-size: 1.1rem; margin-bottom: 2rem; }
+    .back-btn { background: var(--accent); color: #fff; border: none; border-radius: 2rem; padding: 0.7rem 2.2rem; font-size: 1.1rem; cursor: pointer; transition: background 0.2s; }
+    .back-btn:hover, .back-btn:focus { background: var(--primary); }
+  </style>
+</head>
+<body>
+  <div class="lost-art" aria-hidden="true">
+    <!-- SVG: Framed painting with a missing piece -->
+    <svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="30" y="30" width="340" height="160" rx="24" fill="#fff" stroke="#2d2d5a" stroke-width="6"/>
+      <rect x="60" y="60" width="280" height="100" rx="12" fill="#f6f6f9" stroke="#ff5e5b" stroke-width="4"/>
+      <text x="200" y="120" text-anchor="middle" font-size="64" fill="#ff5e5b" font-family="Segoe UI, Arial, sans-serif" font-weight="bold">404</text>
+      <circle cx="320" cy="80" r="18" fill="#ffeaea" stroke="#ff5e5b" stroke-width="3"/>
+      <rect x="90" y="110" width="40" height="20" rx="6" fill="#ffeaea" stroke="#ff5e5b" stroke-width="2"/>
+    </svg>
+  </div>
+  <div class="lost-msg">Lost in the Museum</div>
+  <div class="lost-desc">This page is missing from our gallery.<br>But broken links are beautiful here.</div>
+  <a href="index.html"><button class="back-btn">Return to Gallery</button></a>
+</body>
+</html>

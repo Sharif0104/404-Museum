@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Museum – Virtual Gallery of Creative 404 Pages</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <h1>🖼️ 404 Museum</h1>
+    <nav id="room-nav" aria-label="Gallery Rooms"></nav>
+    <form id="search-form" role="search" aria-label="Search 404 Gallery">
+      <input type="search" id="search-input" placeholder="Search by title, description, or style…" aria-label="Search entries">
+      <select id="category-filter" aria-label="Filter by category">
+        <option value="">All Categories</option>
+      </select>
+    </form>
+  </header>
+  <main>
+    <section id="gallery" aria-live="polite"></section>
+    <section id="no-results" hidden>
+      <p>No 404 pages found. Try a different search or filter.</p>
+    </section>
+    <section id="submit" aria-labelledby="submit-title">
+      <h2 id="submit-title">📬 Submit a 404 Page</h2>
+      <p>Want to add a creative 404 page? <a href="https://github.com/your-repo/404-museum#contributing" target="_blank" rel="noopener">Submit a Pull Request</a> with your entry in <code>entries.json</code> and a screenshot in <code>screenshots/</code>!</p>
+    </section>
+  </main>
+  <footer>
+    <p>404 Museum &copy; 2025. <a href="https://github.com/your-repo/404-museum" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
